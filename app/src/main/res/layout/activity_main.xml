@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="100dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="第一次使用时请务必注册一个用户名为admin的账号，这个账号名锁定了管理员权限"/>
+    <EditText
+        android:id="@+id/Main_Name"
+        android:hint="用户名"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp" />
+    <EditText
+        android:id="@+id/Main_Password"
+        android:hint="密码"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/Main_Login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100px"
+            android:text="登陆"
+            android:layout_marginTop="2dp">
+        </Button>
+        <Button
+            android:id="@+id/Main_Forget_Password"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100px"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            android:text="忘记密码" />
+    </LinearLayout>
+        <Button
+            android:id="@+id/Main_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="注册">
+        </Button>
+
+
+
+</LinearLayout>

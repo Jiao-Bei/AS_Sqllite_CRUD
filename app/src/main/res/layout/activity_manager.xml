@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manager"
+    android:orientation="vertical"
+    android:id="@+id/Manager_RelativeLayout">
+    <TextView
+        android:id="@+id/Manager_Describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxEms="15"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="在这里，你可以删除其他用户，但是不能设置他们的密码。也可以进入你自己的用户界面"/>
+
+    <ScrollView
+        android:id="@+id/Manager_ScrolView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/Manager_Describe"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:id="@+id/Manager_BtnGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/Manager_Before_Target"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:textSize="30dp"
+        android:text="你现在选中的对象是："
+        android:layout_below="@id/Manager_ScrolView" />
+
+    <TextView
+        android:id="@+id/Manager_Target"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:textSize="30dp"
+        android:layout_below="@id/Manager_Before_Target"
+        android:layout_marginTop="0dp"/>
+    <Button
+        android:id="@+id/Manager_Delete_It"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/warningRed"
+        android:text="删除对象"
+        android:textSize="40dp"
+        android:layout_below="@id/Manager_Target"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:id="@+id/Manager_To_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入用户界面"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"/>
+</RelativeLayout>

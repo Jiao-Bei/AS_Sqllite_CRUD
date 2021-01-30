@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".User">
+    <TextView
+        android:id="@+id/User_Title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:text="考虑到这个登录项目，其实到这一步就结束的差不多了，所以，这个界面集成重设密码和注销效果"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/User_Before_Old_Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旧密码："
+            android:textSize="30dp"/>
+        <EditText
+            android:id="@+id/User_Old_Password"
+            android:inputType="textPassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+
+            android:layout_toRightOf="@id/User_Before_Old_Password"/>
+        <TextView
+            android:id="@+id/User_Before_New_Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新密码："
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/User_Before_Old_Password"
+            android:textSize="30dp"/>
+        <EditText
+            android:id="@+id/User_New_Password"
+            android:inputType="textPassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/User_Old_Password"
+            android:layout_marginTop="20dp"
+
+            android:layout_toRightOf="@id/User_Before_New_Password"/>
+        <TextView
+            android:id="@+id/User_Before_Confirm_Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码："
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/User_Before_New_Password"
+            android:textSize="30dp"/>
+        <EditText
+            android:id="@+id/User_Confirm_Password"
+            android:inputType="textPassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/User_New_Password"
+            android:layout_marginTop="20dp"
+
+            android:layout_toRightOf="@id/User_Before_Confirm_Password"/>
+        <Button
+            android:id="@+id/User_Reset_Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/User_Confirm_Password"
+            android:layout_centerHorizontal="true"
+            android:text="密码重置"
+            android:textSize="30dp"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/User_Exit_To_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回主界面"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/User_Delete_Myself"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/nothing"
+        android:text="注销用户"
+        android:layout_gravity="center"
+        android:textColor="@color/warningRed"
+        android:textSize="30dp"
+        android:layout_marginTop="100dp"/>
+
+
+</LinearLayout>
